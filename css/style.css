@@ -1,0 +1,360 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* White background for clean look */
+    color: #000000; /* Black text */
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    background-color: #FFD700; /* Yellow */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #FFD700;
+    border-radius: 5px;
+}
+
+/* ===== Headings ===== */
+h1 {
+    color: #FFD700; /* Yellow for main headings */
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2, h3 {
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    margin-bottom: 15px;
+}
+
+/* ===== Lists ===== */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* ===== Links ===== */
+a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Forms ===== */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e6c200;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #FFD700;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* ===== Iframe Styling ===== */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    form {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+/* Make the page take up the full screen height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Layout wrapper */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* main*/
+main {
+  flex: 1;
+}
+
+
+/* Footer styling */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+/* ===== Service Card Section ===== */
+.service-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Card Container */
+.service-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+    border: 3px solid #FFD700;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+
+/* Image Styling */
+.service-card img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Content Area */
+.service-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Heading */
+.service-content h2 {
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.service-content p {
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* List */
+.service-content ul {
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000000;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #FFD700;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+
+    .service-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-content ul {
+        text-align: left;
+    }
+}
+/* Center the form container on the page */
+.form-container {
+    max-width: 500px; /* width of the form */
+    margin: 0 auto;   /* horizontal centering */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* optional for nicer look */
+}
+
+/* Center the intro text */
+.form-container .form-intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Make inputs and textarea full width */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Style the submit button */
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #FFD700;
+}
+/* Style the details as a dropdown */
+.dropdown-checklist {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Style the summary (the clickable part) */
+.dropdown-checklist summary {
+    padding: 12px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    list-style: none; /* remove default arrow */
+}
+
+/* Add a custom arrow */
+.dropdown-checklist summary::marker {
+    display: none; /* hide default arrow */
+}
+
+/* Align the arrow manually */
+.dropdown-checklist summary::after {
+    content: "▼";
+    float: right;
+}
+
+/* When open, rotate the arrow */
+.dropdown-checklist[open] summary::after {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    padding: 10px 0 0 0;
+}
+
+/* Checkbox labels flex for alignment */
+.dropdown-content label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+}
+
+.dropdown-content input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}

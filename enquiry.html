@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrightSpark Electrical Services</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
@@ -14,21 +15,37 @@
     <a href="services.html">Services</a>
     </nav>
     <h1>Request a Quote</h1>
-    <p>Fill in your details and we'll get back to you quickly</p>
+    <div class="form-container">
+    <p class="form-intro">Fill in your details and we'll get back to you quickly</p>
     <form action="#" method="post">
         <label for="name">Full Name:</label><br>
-        <input type="text" id="name"name="name"required><br><br>
-        <label for="email"> Email Address: </label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email Address:</label><br>
         <input type="email" id="email" name="email" required><br><br>
         <label for="phone">Phone number:</label><br>
-        <input type="tel" id="phone"name="phone"required><br><br>
-        <label for="service">Service Needed:</label><br>
-        <input type="text" id="service"name="service"><br><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="services">Services Needed:</label><br>
+
+<details class="dropdown-checklist">
+    <summary>Select Services &#9660;</summary>
+    <div class="dropdown-content">
+        <label><input type="checkbox" name="services[]" value="Wiring">Wiring</label>
+        <label><input type="checkbox" name="services[]" value="Sockets">Sockets</label>
+        <label><input type="checkbox" name="services[]" value="Full System Installations">Full System Installations</label>
+        <label><input type="checkbox" name="services[]" value="Fixing Faults">Fixing Faults</label>
+        <label><input type="checkbox" name="services[]" value="Outages">Outages</label>
+        <label><input type="checkbox" name="services[]" value="Damaged Systems">Damaged Systems</label>
+        <label><input type="checkbox" name="services[]" value="Indoor Lighting">Indoor Lighting</label>
+        <label><input type="checkbox" name="services[]" value="Outdoor Lighting">Outdoor Lighting</label>
+        <label><input type="checkbox" name="services[]" value="Maintenance">Maintenance</label>
+    </div>
+</details>
+        <br>
         <label for="message">Message:</label><br>
-        <textarea id="message"name="message"rows="5" cols="30" required></textarea><br><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
         <button type="submit">Submit Enquiry</button>
-        
     </form>
+</div>
     <footer>
         <p>&copy; 2026 BrightSpark Electrical Services | All Rights Reserved</p>
     </footer>
