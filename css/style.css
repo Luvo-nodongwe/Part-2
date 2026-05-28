@@ -324,31 +324,39 @@ background:rgba(0,0,0,0.9);
 border-top:1px solid rgba(255,215,0,0.2);
 color:#FFD700;
 }
+
 /* Animations */
+
 @keyframes fadeUp{ 
-from{ opacity:0; transform:translateY(40px);
+from{ 
+opacity:0; transform:translateY(40px);
 }
-to{ opacity:1; transform:translateY(0);
+to{
+opacity:1; transform:translateY(0);
 }
-} @keyframes flicker
-{ 0%
- { opacity:1;
- }
- 50%{ opacity:0.85;
 } 
- 100%{
+@keyframes flicker{
+0%{
+{ opacity:1;
+}
+50%{ 
+opacity:0.85;
+} 
+100%{
 100%{ 
 opacity:1;
 }
 } 
 /* Responsive */ 
 @media(max-width:768px){
-    nav{ flex-wrap:wrap; gap:15px; 
-       } 
-    .hero h1{ 
-        font-size:3rem; } 
-    h2{
-        font-size:2rem;
-    }
+nav{ 
+flex-wrap:wrap; gap:15px; 
+} 
+.hero h1{ 
+font-size:3rem; 
+} 
+h2{
+font-size:2rem;
+}
 }
 
